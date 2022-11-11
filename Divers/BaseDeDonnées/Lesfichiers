@@ -1,0 +1,3 @@
+Le fichier "graal_reference.sql" contient le script de création de la base de données. C'est le premier script à exécuter.
+Le fichier "_critères.sql" contient les différents critères "métiers" necessaires à l'exploitation minimale du GRAAL. Ces critères métiers sont caractérisés par une cleunik inférieure à 1000.
+
