@@ -1,0 +1,143 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.8.1deb5
+-- http://www.phpmyadmin.net
+--
+-- Serveur: localhost
+-- Généré le : Ven 11 Novembre 2022 à 11:30
+-- Version du serveur: 5.0.51
+-- Version de PHP: 5.2.6-1+lenny3
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de données: 'graal_emailing_reference'
+--
+
+--
+-- Contenu de la table '_criteres'
+--
+
+INSERT INTO _criteres (critere_cleunik, critere_code, critere_denomination, critere_type, critere_impose, critere_choixmultiples, critere_imageassociee, critere_imageaffichable, critere_blocnotebrut, critere_blocnotertf, critere_dateheurecreation, critere_dateheuremodification, critere_actif, critere_format, critere_nombre, critere_great, critere_codechoixpertinent, critere_portee, critere_hl, critere_perso) VALUES
+(0, 'Pas de critère', 'Pas de critère', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-19 21:26:37', NULL, 1, NULL, 0, 1, 2, 16359, 2, 2),
+(1, 'CpVillesFrance', 'Code postaux et villes de france', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-19 21:26:37', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(11, 'PCSNiveau1', 'Niveau 1 des Professions et Catégories Socioprofessionnelles', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-29 23:16:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(12, 'PCSNiveau2', 'Niveau 2 des Professions et Catégories Socioprofessionnelles', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-29 23:33:18', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(13, 'PCSNiveau3', 'Niveau 3 des Professions et Catégories Socioprofessionnelles', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-29 23:33:24', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(14, 'PCSNiveau4', 'Niveau 4 des Professions et Catégories Socioprofessionnelles', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-29 23:33:33', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(21, 'NAFN1', 'Niveau 17 des Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:39:50', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(22, 'NAFN2', 'Niveau 31 des Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:42:13', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(23, 'NAFN3', 'Niveau 60 des Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:04', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(24, 'NAFN4', 'Niveau 220 des Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:10', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(25, 'NAFN5', 'Niveau 700 des Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:18', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(31, 'CPFN1', 'Sections  des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:46:48', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(32, 'CPFN2', 'Sous-Sections  des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:48:50', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(33, 'CPFN3', 'Divisions des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:48:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(34, 'CPFN4', 'Groupes des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:49:03', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(35, 'CPFN5', 'Classes des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:49:09', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(36, 'CPFN6', 'Catégories des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:49:19', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(37, 'CPFN7', 'Sous-Catégories des Classification des produits Francaise', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 23:49:28', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(41, 'CJN1', 'Niveau 1 des catégories juridiques', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 00:23:44', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(42, 'CJN2', 'Niveau 2 des catégories juridiques', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 00:24:51', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(43, 'CJN3', 'Niveau 3 des catégories juridiques', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 00:24:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(51, 'NESN1', 'Niveau 1 des nomenclatures économiques de synthèse', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 09:34:26', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(52, 'NESN2', 'Niveau 2 des nomenclatures économiques de synthèse', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 09:34:31', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(53, 'NESN3', 'Niveau 2 des nomenclatures économiques de synthèse', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 09:34:36', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(58, 'ISO6392B-2T-GED', 'Langues Normes ISO-639-2B et ISO-639-2T', 1, 1, 1, 0, 1, NULL, NULL, '2006-06-22 22:35:33', '2006-06-22 22:35:33', 1, NULL, 0, 1, 2, 16384, 2, 2),
+(59, 'ISO6392B-2T', 'Langues Normes ISO-639-2B et ISO-639-2T', 1, 1, 1, 0, 1, NULL, NULL, '2006-06-22 22:35:33', '2006-06-22 22:35:33', 1, NULL, 0, 1, 2, 12415, 2, 2),
+(60, 'PAYSO3166', 'Liste des pays norme ISO 3166', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 11:10:14', NULL, 1, NULL, 0, 1, 2, 12415, 2, 2),
+(61, 'REGIONSF', 'Liste des Régions françaises source INSEE', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-02 16:00:21', NULL, 1, NULL, 0, 1, 2, 8318, 2, 2),
+(62, 'DPSF', 'Départements français source INSEE', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-02 16:00:29', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(63, 'ARRONDF', 'Arrondissements français source INSEE', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-02 16:00:41', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(64, 'CANTONF', 'Cantons français source INSEE', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-02 16:01:00', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(65, 'COMMUNF', 'Communes françaises source INSEE', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-02 16:23:13', NULL, 1, NULL, 0, 1, 1, NULL, 2, 2),
+(66, '000000000000066', 'Préfixes téléphoniques internationaux (norme ITU E.164)', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-23 15:20:46', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(67, 'DEV4217', 'Liste des devis sur base norme ISO 4217', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-01 11:10:14', NULL, 1, NULL, 0, 1, 2, 12415, 2, 2),
+(71, 'NAFN1-2008', 'Niveau 1 (21 sections) Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:39:50', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(72, 'NAFN2-2008', 'Niveau 2 (88 divisions) Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:42:13', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(73, 'NAFN3-2008', 'Niveau 3 (272 groupes) Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:04', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(74, 'NAFN4-2008', 'Niveau 4 (615 classes) Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:10', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(75, 'NAFN5-2008', 'Niveau 5 (732 sous classes) Nomenclatures d''activités Française', 1, 1, 1, 0, 1, NULL, NULL, '2005-06-30 22:49:18', NULL, 1, NULL, 0, 1, 1, 8318, 2, 2),
+(79, '000000000000079', 'Portée', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-06 00:11:57', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(80, '000000000000080', 'Genres d''acteurs', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(81, '000000000000081', 'Genres d''interlocuteurs', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-07 22:49:33', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(82, '000000000000082', 'Genres de téléphones', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-07 22:49:33', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(83, '000000000000083', 'Genres de fax', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-07 22:49:33', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(84, '000000000000084', 'Genres de courriels', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:03:52', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(85, '000000000000085', 'Genres d''adresses internet', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:03:52', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(86, '000000000000086', 'Civilités', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:25:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(92, '000000000000092', 'Fonctions', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-26 23:53:44', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(93, '000000000000093', 'Dossiers', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:59:15', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(94, '000000000000094', 'Actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:25', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(95, '000000000000095', 'Relations', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:26', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(96, '000000000000096', 'Documents', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:26', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(97, '000000000000097', 'Relations entre actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-22 22:36:53', NULL, 1, NULL, 0, 1, 1, NULL, 2, 2),
+(98, '000000000000098', 'Genre d''adresses postales', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 07:58:35', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(99, '000000000000099', 'Métiers', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:01:58', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(100, '000000000000100', 'Familles d''articles', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:01:58', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(101, '000000000000101', 'Tarifs de vente', 1, 1, 1, 0, 1, NULL, NULL, '2007-02-05 17:44:36', NULL, 1, NULL, 0, 1, 2, 1024, 2, 2),
+(102, '000000000000102', 'Comptes comptables vente france', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(103, '000000000000103', 'Comptes comptables vente Intracommunautaire', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(104, '000000000000104', 'Comptes comptables vente Export (Extracommunautaire)', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(105, '000000000000105', 'Comptes comptables achats france', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(106, '000000000000106', 'Comptes comptables achats Intracommunautaire', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(107, '000000000000107', 'Comptes comptables achats Export (Extracommunautaire)', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(108, '000000000000108', 'Unités de stock', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(109, '000000000000109', 'Unités de commande client (Unités de vente)', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(110, '000000000000110', 'Unités de commande fournisseur (Unités d''achat)', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(111, '000000000000111', 'Unités de livraison clients', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(112, '000000000000112', 'Unités de réception fournisseur', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(113, '000000000000113', 'Intitulés des relations entre interlocuteurs d''acteurs', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(114, '000000000000114', 'Intitulés des relations entre acteurs', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(115, '000000000000115', 'Mode de gestion', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-28 12:36:11', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(116, '000000000000116', 'Dépôts', 1, 1, 1, 0, 1, NULL, NULL, '2006-12-12 10:42:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(117, '000000000000117', 'Emplacements', 1, 1, 1, 0, 1, NULL, NULL, '2006-12-12 10:42:56', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(118, '000000000000118', 'Intitulés des relations entre articles', 1, 1, 1, 0, 1, NULL, NULL, '2006-12-13 11:04:09', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(119, '000000000000119', 'Unités de temps', 1, 1, 1, 0, 1, NULL, NULL, '2006-12-13 14:54:42', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(120, '000000000000120', 'Meta-Tags pages (x)html', 1, 1, 1, 0, 1, NULL, NULL, '2006-06-22 22:35:33', '2006-06-22 22:35:33', 1, NULL, 0, 1, 2, 16384, 2, 2),
+(121, '000000000000121', 'Extensions des fichiers', 1, 1, 1, 0, 1, NULL, NULL, '2006-06-22 22:35:33', '2006-06-22 22:35:33', 1, NULL, 0, 1, 2, 16384, 2, 2),
+(122, '000000000000122', 'Confidentialité des actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:25', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(123, '000000000000123', 'Priorités des actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:25', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(124, '000000000000124', 'Statuts des actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:25', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(125, '000000000000125', 'Relations entre actions', 1, 1, 1, 0, 1, NULL, NULL, '2005-09-05 21:47:26', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(126, '000000000000126', 'Genres d''acteurs particuliers', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:25:56', NULL, 1, NULL, 0, 1, 2, 8196, 2, 2),
+(127, '000000000000127', 'Tarifs d''achats', 1, 1, 1, 0, 1, NULL, NULL, '2007-02-01 07:57:26', NULL, 1, NULL, 0, 1, 2, 1024, 2, 2),
+(128, '000000000000128', 'Unités de conditionnement', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(129, '000000000000129', 'Statuts des lignes d''actions commerciales', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(130, '000000000000130', 'Origine des mouvements de stock', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(131, '000000000000131', 'Unités de capacité', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(132, '000000000000132', 'Unités de masse', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(133, '000000000000133', 'Unités de volume', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(134, '000000000000134', 'Unités de surface', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(135, '000000000000135', 'Unités de longueur', 1, 1, 1, 0, 1, NULL, NULL, '2006-11-01 08:02:00', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(136, '000000000000136', 'Meta-Tags pages (x)html', 1, 1, 1, 0, 1, NULL, NULL, '2006-06-22 22:35:33', '2006-06-22 22:35:33', 1, NULL, 0, 1, 2, 8196, 2, 2),
+(137, '000000000000137', 'Modes de paiement', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(138, '000000000000138', 'Types de paiement', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(139, '000000000000139', 'Types de port', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 1, NULL, 2, 2),
+(140, '000000000000140', 'Modalités de livraison', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 1, NULL, 2, 2),
+(141, 'Demande 1', 'Nature des demandes internet', 1, NULL, 1, NULL, NULL, '', NULL, '2008-04-12 16:34:26', '2008-04-12 16:37:10', 1, NULL, NULL, NULL, 1, 2048, 2, 2),
+(142, '000000000000142', 'Genres d''articles particuliers', 1, 1, 1, 0, 1, '', NULL, '1961-01-23 11:11:11', '1961-01-23 11:11:11', 1, NULL, 0, 1, 2, 1024, 2, 2),
+(143, '000000000000143', 'Types d''identifiants de chat', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:03:52', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(144, '000000000000144', 'Protocoles des identifiants de chat', 1, 1, 1, 0, 1, NULL, NULL, '2005-07-09 18:03:52', NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(145, '000000000000145', 'Options de remises de réglements', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(146, '000000000000146', 'Types d''écarts de réglements', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2),
+(147, '000000000000147', 'Propriétés', 1, NULL, 1, NULL, NULL, '', NULL, '1961-01-23 23:01:00', '1961-01-23 23:01:00', 1, NULL, NULL, NULL, 1, 16384, 2, 1),
+(148, '000000000000148', 'Duplication d''acteurs', 1, 1, 1, 0, 1, '', NULL, '2005-07-09 18:25:56', '2008-12-28 19:36:07', 1, NULL, 0, 1, 2, 8318, 2, 2),
+(149, '', 'Message en création d''offre', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8198, 2, 2),
+(150, '', 'Message en création de commande client', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8196, 2, 2),
+(151, '', 'Message en création de livraison', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8196, 2, 2),
+(152, '', 'Message en création retour client', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8196, 2, 2),
+(153, '', 'Message en création de facture ', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8196, 2, 2),
+(154, '', 'Message en création d''avoir', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8196, 2, 2),
+(155, '', 'Message en création de demande', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8216, 2, 2),
+(156, '', 'Message en création de commande fournisseur', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8208, 2, 2),
+(157, '', 'Message en création de réception', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8208, 2, 2),
+(158, '', 'Message en création de retour fournisseur', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8208, 2, 2),
+(159, '', 'Message en création de facture fournisseur', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8208, 2, 2),
+(160, '', 'Message en création d''avoir fournisseur', 1, NULL, 2, NULL, NULL, '', NULL, '1961-01-23 17:00:00', NULL, 1, NULL, NULL, NULL, 2, 8208, 2, 2),
+(999, '000000000000999', 'Butor', 1, 1, 1, 0, 1, NULL, NULL, NULL, NULL, 1, NULL, 0, 1, 2, NULL, 2, 2);
