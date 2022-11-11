@@ -1,3 +1,14 @@
+Dans l'ordre :
 Le fichier "graal_reference.sql" contient le script de création de la base de données. C'est le premier script à exécuter.
 Le fichier "_critères.sql" contient les différents critères "métiers" necessaires à l'exploitation minimale du GRAAL. Ces critères métiers sont caractérisés par une cleunik inférieure à 1000.
+Le fichier "_choix.sql" contient les différents choix "métier" des critères "métiers" necessaires à l'exploitation minimale du GRAAL.
+Le fichier "_critère_pere_fils.sql" contient des liaisons entre des critères "métiers" necessaires à l'exploitation minimale du GRAAL.
+
+Ensuite le couple de fichier "_elements.sql" et "_elements_libelle.sql" qui contient tout les éléments de type "champ" de l'application dont le libellé est personnalisable.
+Puis le couple "_objets.sql" et "_objets_libelle.sql" qui contient tout les éléménts de type "fenêtre" de l'application dont le libellé et l'accès sont personnalisables.
+
+Ensuite, dans le désordre, contenant  diverses valeurs par défaut :
+_param_tpf.sql, _param_taxes.sql, param_pc.sql, _treso_journal.sql, _actions.sql, _documents.sql, _modreg.sql, _modreg_det.sql, _univente_par_con.sql, _uni_par_con.sql, _utilisateur.sql.
+
+
 
