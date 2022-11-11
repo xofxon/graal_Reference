@@ -1,1 +1,2 @@
 - Ne fonctionne que dans le navigateur firefox. Dernière version exploitable avec certitude : 16.0.1
+- Utilise une base mysql innodb. Le fichier permettant de créer cette base est nommé graal_reference.sql
