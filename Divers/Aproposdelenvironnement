@@ -1,3 +1,5 @@
 - Ne fonctionne que dans le navigateur firefox. Dernière version exploitable avec certitude : 16.0.1
 Téléchargeable ici : https://archive.mozilla.org/pub/firefox/releases/16.0.1/win32/fr/
+- Il est nécessaire d'installer une extension (Remote-XUL-Manager) pour pouvoir exploiter le site sur lequel sera installé l'applicatif. Elle se trouve ici : https://github.com/jvillalobos/Remote-XUL-Manager
 - Utilise une base mysql innodb. Le fichier permettant de créer cette base est nommé graal_reference.sql et est localisé dans le sous-répertoire "Basededonnées".
+
